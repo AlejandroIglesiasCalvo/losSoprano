@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+  /*Especificidad de mierda 001*/
+  body {
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "linea_1"
+    "linea_2"
+    "linea_3"
+    "linea_4";
+  }
+  /*Especificidad 001*/
+  header {
+    grid-area: linea_1;
+  }
+  /*Especificidad 001*/
+  aside {
+    grid-area: linea_2;
+  }
+  /*Especificidad 001*/
+  main {
+    grid-area: linea_3;
+  }
+  /*Especificidad 001*/
+  footer {
+    grid-area: linea_4;
+  }
+}

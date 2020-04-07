@@ -1,0 +1,131 @@
+/*Especificidad 001*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  text-align: center;
+  font: 400 1em Tahoma, sans-serif;
+  line-height: 1.8;
+  color: #fff;
+  background-color: #000000;
+  text-align: left;
+}
+
+/*Especificidad 001*/
+header {
+  grid-area: header;
+  background-color: #000000;
+  background-clip: content-box;
+  color: #fff;
+  background-image: url("multimedia/pose.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+}
+/*Especificidad 011*/
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+/*Especificidad 011*/
+a:visited {
+  color: rgb(214, 55, 34);
+}
+/*Especificidad 001*/
+aside {
+  grid-area: aside;
+}
+/*Especificidad 002*/
+aside nav {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*Especificidad 001*/
+main {
+  grid-area: content;
+}
+/*Especificidad 001*/
+footer {
+  grid-area: footer;
+  align-content: center;
+}
+/*Especificidad 002*/
+body h2,
+body h3,
+body h4 {
+  background-color: #000000;
+}
+/*Especificidad 001*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+/*Especificidad 001*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+}
+/*Especificidad 001*/
+h1,
+h3,
+h5 {
+  font-stretch: expanded;
+}
+/*Especificidad 001*/
+h2,
+h4,
+h6 {
+  font-style: italic;
+}
+/*Especificidad 001*/
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5em;
+  padding: 0px 0px;
+}
+/*Especificidad 001*/
+h2 {
+  font-size: 2em;
+  padding: 0px 0px;
+}
+/*Especificidad 001*/
+h3 {
+  font-size: 1.5em;
+  padding: 0px 0px;
+}
+/*Especificidad 001*/
+h4 {
+  font-size: 1.2em;
+  padding: 0px 0px;
+}
+/*Especificidad 001*/
+table,
+ul,
+ol,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+}
+/*Especificidad 002*/
+p::first-letter {
+  font-size: 2em;
+}
+/*Especificidad 002*/
+section img {
+  max-width: 100%;
+  height: auto;
+}
